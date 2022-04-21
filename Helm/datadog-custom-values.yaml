@@ -1,0 +1,17 @@
+datadog:
+  # datadog.apiKey -- Your Datadog API key
+  # ref: https://app.datadoghq.com/account/settings#agent/kubernetes
+  apiKey: cc7568d39a3637c772e14e38f0760f1e
+  # datadog.appKey -- Datadog APP key required to use metricsProvider
+  ## If you are using clusterAgent.metricsProvider.enabled = true, you must set
+  ## a Datadog application key for read access to your metrics.
+  appKey: ddfed960b4fb1ff86d396e22bd25eca0aee95ebb
+  # datadog.clusterName -- Set a unique cluster name to allow scoping hosts and Cluster Checks easily
+  ## The name must be unique and must be dot-separated tokens with the following restrictions:
+  ## * Lowercase letters, numbers, and hyphens only.
+  ## * Must start with a letter.
+  ## * Must end with a number or a letter.
+  ## * Overall length should not be higher than 80 characters.
+  ## Compared to the rules of GKE, dots are allowed whereas they are not allowed on GKE:
+  ## https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#Cluster.FIELDS.name
+  clusterName: sangeeth-oci-training
